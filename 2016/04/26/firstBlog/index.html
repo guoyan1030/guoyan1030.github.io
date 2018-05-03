@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="sunny">
 <meta property="og:description" content="1、准备工作1&amp;gt;必须有一个github账号，没有的话需要注册一个；2&amp;gt;安装了node.js、npm，并且了解相关的基础知识；3&amp;gt;安装git(或者其它git客户端) 2、搭建github博客2.1 新建一个名为 你github博客用户名.github.io的仓库(必须是你用户名，其它名称无效)，将来你的网站的名字就是http://你github博客用户名.github.io。几个需">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-28T08:14:33.000Z">
+<meta property="og:updated_time" content="2018-05-03T05:25:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo+github搭建博客">
 <meta name="twitter:description" content="1、准备工作1&amp;gt;必须有一个github账号，没有的话需要注册一个；2&amp;gt;安装了node.js、npm，并且了解相关的基础知识；3&amp;gt;安装git(或者其它git客户端) 2、搭建github博客2.1 新建一个名为 你github博客用户名.github.io的仓库(必须是你用户名，其它名称无效)，将来你的网站的名字就是http://你github博客用户名.github.io。几个需">
@@ -324,6 +324,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、准备工作"><span class="toc-number">1.</span> <span class="toc-text">1、准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、搭建github博客"><span class="toc-number">2.</span> <span class="toc-text">2、搭建github博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-新建一个名为-你github博客用户名-github-io的仓库-必须是你用户名，其它名称无效-，将来你的网站的名字就是http-你github博客用户名-github-io。"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 新建一个名为 你github博客用户名.github.io的仓库(必须是你用户名，其它名称无效)，将来你的网站的名字就是http://你github博客用户名.github.io。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-绑定域名"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 绑定域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-gt-配置SSH-key"><span class="toc-number">2.3.</span> <span class="toc-text">2.3&gt; 配置SSH key</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、测试是否成功"><span class="toc-number">3.</span> <span class="toc-text">3、测试是否成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、使用hexo写博客"><span class="toc-number">4.</span> <span class="toc-text">4、使用hexo写博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-hexo简介"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 hexo简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-原理"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-注意事项"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-安装"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-初始化"><span class="toc-number">4.5.</span> <span class="toc-text">4.5 初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-修改主题"><span class="toc-number">4.6.</span> <span class="toc-text">4.6 修改主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-7-上传到github"><span class="toc-number">4.7.</span> <span class="toc-text">4.7 上传到github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-8-写博客"><span class="toc-number">4.8.</span> <span class="toc-text">4.8 写博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-8-常见hexo命令"><span class="toc-number">4.9.</span> <span class="toc-text">4.8 常见hexo命令</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -433,8 +446,8 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           </ul>
         </div>
         <ul class="search-ul">
-          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+          <!-- <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -456,7 +469,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       categories: false
       tags: true
 </pre>
-          </p>
+          </p> -->
           <li class="search-li" q-repeat="items" q-show="isShow">
             <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
             <p class="search-time">
@@ -486,19 +499,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="http://lawlite.me/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>yilla主题研究者</a>
             </li>
           
         </ul>
