@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>github常见操作和常见错误！ | sunny</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、错误提示：fatal: remote origin already exists.如果输入$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git提示出错信息：fatal: remote origin already exists.解决办法如下：1、先输入$ git remote rm origin2、">
+  <meta name="description" content="错误提示：fatal: remote origin already exists.如果输入$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git提示出错信息：fatal: remote origin already exists.解决办法如下：  先输入$ git remote rm origin. 在输">
 <meta name="keywords" content="Github,常见错误">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github常见操作和常见错误！">
 <meta property="og:url" content="http://yoursite.com/2017/02/18/second-blog/index.html">
 <meta property="og:site_name" content="sunny">
-<meta property="og:description" content="一、错误提示：fatal: remote origin already exists.如果输入$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git提示出错信息：fatal: remote origin already exists.解决办法如下：1、先输入$ git remote rm origin2、">
+<meta property="og:description" content="错误提示：fatal: remote origin already exists.如果输入$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git提示出错信息：fatal: remote origin already exists.解决办法如下：  先输入$ git remote rm origin. 在输">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2018-05-09T02:10:49.000Z">
+<meta property="og:updated_time" content="2018-05-11T06:38:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github常见操作和常见错误！">
-<meta name="twitter:description" content="一、错误提示：fatal: remote origin already exists.如果输入$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git提示出错信息：fatal: remote origin already exists.解决办法如下：1、先输入$ git remote rm origin2、">
+<meta name="twitter:description" content="错误提示：fatal: remote origin already exists.如果输入$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git提示出错信息：fatal: remote origin already exists.解决办法如下：  先输入$ git remote rm origin. 在输">
   
     <link rel="alternative" href="/atom.xml" title="sunny" type="application/atom+xml">
   
@@ -189,11 +189,22 @@
   	<time datetime="2017-02-18T07:37:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-18</time>
 </a>
         
+        <!-- <p id="busuanzi_container_page_pv">
+          本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p> -->
       </header>
+    
     
     <div class="article-entry" itemprop="articleBody">
       <!-- 
-        <h2 id="一、错误提示：fatal-remote-origin-already-exists"><a href="#一、错误提示：fatal-remote-origin-already-exists" class="headerlink" title="一、错误提示：fatal: remote origin already exists."></a>一、错误提示：fatal: remote origin already exists.</h2><p>如果输入<code>$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git</code><br>提示出错信息：fatal: remote origin already exists.<br>解决办法如下：<br>1、先输入$ git remote rm origin<br>2、在输入$ git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:djqiang/gitdemo.git 就不会报错了！<br>3、如果输入$ git remote rm origin 还是报错的话，error: Could not remove config section ‘remote.origin’. 我们需要修改gitconfig文件的内容<br>4、找到你的github的安装路径，我的是C:\Users\ASUS\AppData\Local\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\etc<br>5、找到一个名为gitconfig的文件，打开它把里面的[remote “origin”]那一行删掉就好了！</p>
+        <h2 id="错误提示：fatal-remote-origin-already-exists"><a href="#错误提示：fatal-remote-origin-already-exists" class="headerlink" title="错误提示：fatal: remote origin already exists."></a>错误提示：fatal: remote origin already exists.</h2><p>如果输入<code>$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git</code><br>提示出错信息：fatal: remote origin already exists.<br>解决办法如下：</p>
+<ol>
+<li>先输入$ git remote rm origin.</li>
+<li>在输入$ git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:djqiang/gitdemo.git 就不会报错了！</li>
+<li>如果输入$ git remote rm origin 还是报错的话，error: Could not remove config section ‘remote.origin’. 我们需要修改gitconfig文件的内容</li>
+<li>找到你的github的安装路径，我的是C:\Users\ASUS\AppData\Local\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\etc</li>
+<li>找到一个名为gitconfig的文件，打开它把里面的[remote “origin”]那一行删掉就好了！</li>
+</ol>
 
       
  -->
@@ -202,7 +213,14 @@
       
         
         
-          <h2 id="一、错误提示：fatal-remote-origin-already-exists"><a href="#一、错误提示：fatal-remote-origin-already-exists" class="headerlink" title="一、错误提示：fatal: remote origin already exists."></a>一、错误提示：fatal: remote origin already exists.</h2><p>如果输入<code>$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git</code><br>提示出错信息：fatal: remote origin already exists.<br>解决办法如下：<br>1、先输入$ git remote rm origin<br>2、在输入$ git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:djqiang/gitdemo.git 就不会报错了！<br>3、如果输入$ git remote rm origin 还是报错的话，error: Could not remove config section ‘remote.origin’. 我们需要修改gitconfig文件的内容<br>4、找到你的github的安装路径，我的是C:\Users\ASUS\AppData\Local\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\etc<br>5、找到一个名为gitconfig的文件，打开它把里面的[remote “origin”]那一行删掉就好了！</p>
+          <h2 id="错误提示：fatal-remote-origin-already-exists"><a href="#错误提示：fatal-remote-origin-already-exists" class="headerlink" title="错误提示：fatal: remote origin already exists."></a>错误提示：fatal: remote origin already exists.</h2><p>如果输入<code>$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git</code><br>提示出错信息：fatal: remote origin already exists.<br>解决办法如下：</p>
+<ol>
+<li>先输入$ git remote rm origin.</li>
+<li>在输入$ git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:djqiang/gitdemo.git 就不会报错了！</li>
+<li>如果输入$ git remote rm origin 还是报错的话，error: Could not remove config section ‘remote.origin’. 我们需要修改gitconfig文件的内容</li>
+<li>找到你的github的安装路径，我的是C:\Users\ASUS\AppData\Local\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\etc</li>
+<li>找到一个名为gitconfig的文件，打开它把里面的[remote “origin”]那一行删掉就好了！</li>
+</ol>
 
         
       
@@ -330,7 +348,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、错误提示：fatal-remote-origin-already-exists"><span class="toc-number">1.</span> <span class="toc-text">一、错误提示：fatal: remote origin already exists.</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#错误提示：fatal-remote-origin-already-exists"><span class="toc-number">1.</span> <span class="toc-text">错误提示：fatal: remote origin already exists.</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -484,19 +502,19 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
+                <a href="javascript:void(0)" class="js-tag color5">常见错误</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">常见错误</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
               </li>
              
               <li class="article-tag-list-item">
