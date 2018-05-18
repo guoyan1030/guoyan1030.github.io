@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>sunny</title>
+  <title>前端页面布局的几种方法 | sunny</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="从事前端开发工作，是攻城狮一枚。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="sunny">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="HTML:123456789&amp;lt;ul class=&quot;box&quot;&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;lt">
+<meta name="keywords" content="前端布局">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端页面布局的几种方法">
+<meta property="og:url" content="http://yoursite.com/2018/05/17/layoutMethods/index.html">
 <meta property="og:site_name" content="sunny">
-<meta property="og:description" content="从事前端开发工作，是攻城狮一枚。">
+<meta property="og:description" content="HTML:123456789&amp;lt;ul class=&quot;box&quot;&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;lt">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:updated_time" content="2018-05-18T07:23:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sunny">
-<meta name="twitter:description" content="从事前端开发工作，是攻城狮一枚。">
+<meta name="twitter:title" content="前端页面布局的几种方法">
+<meta name="twitter:description" content="HTML:123456789&amp;lt;ul class=&quot;box&quot;&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;lt">
   
     <link rel="alternative" href="/atom.xml" title="sunny" type="application/atom+xml">
   
@@ -165,16 +167,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-layoutMethods" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-layoutMethods" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/17/layoutMethods/">前端页面布局的几种方法</a>
+    <h1 class="article-title" itemprop="name">
+      前端页面布局的几种方法
     </h1>
   
 
@@ -194,7 +194,60 @@
         
         
           <p>HTML:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul class=<span class="string">"box"</span>&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure></p>
-          
+<h1 id="一、float均匀布局"><a href="#一、float均匀布局" class="headerlink" title="一、float均匀布局"></a>一、float均匀布局</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  border: 1px solid <span class="comment">#000;</span></span><br><span class="line">  overflow: hidden;</span><br><span class="line">&#125;</span><br><span class="line">.box li&#123;</span><br><span class="line">  width:33%;    <span class="comment">#为不兼容的浏览器设置宽度。</span></span><br><span class="line">  width:-moz-calc(100% / 3 - 5px);</span><br><span class="line">  width:-webkit-calc(100% / 3 - 5px);</span><br><span class="line">  width: calc(100% / 3 - 5px);</span><br><span class="line">  height: 100px;</span><br><span class="line">  margin-right: calc(5px*3 / 2);</span><br><span class="line">  background: <span class="comment">#8a4182;</span></span><br><span class="line">  <span class="built_in">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line">.box li:nth-child(3n)&#123;</span><br><span class="line">  margin-right: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>说明：用上面的例子来看，如果是列数是奇数均匀分布(栗子是每行三列)，宽度width用CSS3的calc()来进行计算，可避免宽度为33.333的尴尬。<br><code>width: calc(100% / i - 5px);  margin-right: cale(5px*i / i-1);</code>i为你需要设置的列数。唯一的缺点就是浏览器兼容不好。</p>
+<h1 id="二、flex-弹性布局"><a href="#二、flex-弹性布局" class="headerlink" title="二、flex 弹性布局"></a>二、flex 弹性布局</h1><h2 id="1、flex布局"><a href="#1、flex布局" class="headerlink" title="1、flex布局"></a>1、flex布局</h2><p>兼容性支持&gt;=IE11,IE10需要添加浏览器私有前缀(-ms-)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  display: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>行内元素也可使用flex布局。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  display: inline-flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>浏览器需要加私有前缀的，比如：Webkit内核的浏览器，需要加上-webkit前缀。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  display: -webkit-flex;</span><br><span class="line">  display： flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>设置为flex之后，子元素的float、clear和vertival-align属性将失效。</p>
+<h2 id="2、容器的属性"><a href="#2、容器的属性" class="headerlink" title="2、容器的属性"></a>2、容器的属性</h2><ul>
+<li>flex-direction</li>
+<li>flex-wrap</li>
+<li>flex-flow</li>
+<li>justify-content</li>
+<li>align-items</li>
+<li><p>align-content</p>
+<h3 id="2-1-flex-direction属性"><a href="#2-1-flex-direction属性" class="headerlink" title="2.1 flex-direction属性"></a>2.1 flex-direction属性</h3><p><code>flex-direction</code>决定主轴的方向</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  flex-direction:row | row-reverse | column | column-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>row:（默认值），主轴为水平方向，起点在左端。</p>
+</li>
+<li>row-reverse:主轴为水平方向，起点在右端。</li>
+<li>column: 主轴为垂直方向，起点在上沿。</li>
+<li><p>column-reverse: 主轴为垂直方向，起点在下沿。</p>
+<h3 id="2-2-flex-wrap属性"><a href="#2-2-flex-wrap属性" class="headerlink" title="2.2 flex-wrap属性"></a>2.2 flex-wrap属性</h3><p><code>flex-wrap</code>项目排列在一条轴线上，如果排列不下如何换行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  flex-wrap: nowrap | wrap | wrap-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>nowrap: （默认）不换行。</p>
+</li>
+<li>wrap: 换行，第一行在上方。</li>
+<li>wrap-reverse: 换行，第一行在下方。<h3 id="2-3-flex-flow"><a href="#2-3-flex-flow" class="headerlink" title="2.3 flex-flow"></a>2.3 flex-flow</h3><code>flex-flow</code>是<code>flex-direction</code>属性和<code>flex-wrap</code>属性的简写形式，默认值为<code>row nowrap</code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  flex-diretion: &lt;flex-direction&gt; ||&lt;flex-wrap&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-4-justify-content"><a href="#2-4-justify-content" class="headerlink" title="2.4 justify-content"></a>2.4 justify-content</h3><p><code>justify-content</code>属性定义了项目在主轴上的对齐方式。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  justify-content: flex-start | flex-end | center | space-between | space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>flex-start: (默认值)，左对齐。</li>
+<li>flex-end: 右对齐。</li>
+<li>center: 居中。</li>
+<li>space-between: 两端对齐，项目之间间隔。</li>
+<li>space-around: 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。<h3 id="2-5-align-items"><a href="#2-5-align-items" class="headerlink" title="2.5 align-items"></a>2.5 align-items</h3><code>align-items</code>属性定义项目在交叉轴上如何对齐。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  align-items: flex-start |flex-end | center | baseline | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>具体对齐方式与交叉轴的方向有关系，假设交叉轴从上到下。</p>
+<ul>
+<li>flex-start: 交叉轴的起点对齐。</li>
+<li>flex-end: 交叉轴的终点对齐。</li>
+<li>center: 交叉轴的中点对齐。</li>
+<li>baseline: 项目的第一行文字的基线对齐。</li>
+<li>stretch: （默认值），如果项目未设置高度或设为auto，将占满整个容器的高度。<h3 id="2-6-align-content"><a href="#2-6-align-content" class="headerlink" title="2.6 align-content"></a>2.6 align-content</h3><code>align-content</code>属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</li>
+<li>flex-start: 交叉轴的起点对齐。</li>
+<li>flex-end: 交叉轴的终点对齐。</li>
+<li>center: 交叉轴的中点对齐。</li>
+<li>space-between: 与交叉轴两端对齐，轴线之间的间隔平均分布。</li>
+<li>space-around: 每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li>
+<li>stretch: （默认值）轴线占满整个交叉轴。<h2 id="3、项目的属性"><a href="#3、项目的属性" class="headerlink" title="3、项目的属性"></a>3、项目的属性</h2><h3 id="3-1-order属性"><a href="#3-1-order属性" class="headerlink" title="3.1 order属性"></a>3.1 order属性</h3><code>order</code>属性定义项目的排列顺序。数值越小，排列越靠前，默认为0.<h3 id="3-2-flex-grow属性"><a href="#3-2-flex-grow属性" class="headerlink" title="3.2 flex-grow属性"></a>3.2 flex-grow属性</h3><code>flex-grow</code>属性定义项目的放大比例，默认为·<code>0</code>,即如果存在剩余的空间，也不放大。<h3 id="3-3-flex-shrink属性"><a href="#3-3-flex-shrink属性" class="headerlink" title="3.3 flex-shrink属性"></a>3.3 flex-shrink属性</h3><code>flex-shrink</code>属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。<h3 id="3-4-flex-basis属性"><a href="#3-4-flex-basis属性" class="headerlink" title="3.4 flex-basis属性"></a>3.4 flex-basis属性</h3><code>flex-basis</code>属性定义了在分配多余空间之前，项目占据的主轴空间。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为<code>auto</code>,    即项目本来的大小。<h3 id="3-5-flex属性"><a href="#3-5-flex属性" class="headerlink" title="3.5 flex属性"></a>3.5 flex属性</h3><code>flex</code>属性是<code>flex-grow</code>,<code>flex-shrink</code>和<code>flex-basis</code>的简写，默认值为<code>0 1 auto</code>。后两个属性可选。</li>
+</ul>
+
         
       
 
@@ -217,16 +270,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/17/layoutMethods/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/05/17/layoutMethods/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/09/third-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">随笔文章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -241,297 +353,55 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-<!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
-
-  
-    <article id="post-third-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/09/third-blog/">随笔文章</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/09/third-blog/" class="archive-article-date">
-  	<time datetime="2018-05-09T03:47:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-09</time>
-</a>
-        
-        <!-- <p id="busuanzi_container_page_pv">
-          本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-        </p> -->
-      </header>
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-        
-          <p> 这是我的第一篇随笔文章</p>
-          
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/09/third-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、float均匀布局"><span class="toc-number">1.</span> <span class="toc-text">一、float均匀布局</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、flex-弹性布局"><span class="toc-number">2.</span> <span class="toc-text">二、flex 弹性布局</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、flex布局"><span class="toc-number">2.1.</span> <span class="toc-text">1、flex布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、容器的属性"><span class="toc-number">2.2.</span> <span class="toc-text">2、容器的属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-flex-direction属性"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.1 flex-direction属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-flex-wrap属性"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2 flex-wrap属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-flex-flow"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.3 flex-flow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-justify-content"><span class="toc-number">2.2.4.</span> <span class="toc-text">2.4 justify-content</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-align-items"><span class="toc-number">2.2.5.</span> <span class="toc-text">2.5 align-items</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-align-content"><span class="toc-number">2.2.6.</span> <span class="toc-text">2.6 align-content</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、项目的属性"><span class="toc-number">2.3.</span> <span class="toc-text">3、项目的属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-order属性"><span class="toc-number">2.3.1.</span> <span class="toc-text">3.1 order属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-flex-grow属性"><span class="toc-number">2.3.2.</span> <span class="toc-text">3.2 flex-grow属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-flex-shrink属性"><span class="toc-number">2.3.3.</span> <span class="toc-text">3.3 flex-shrink属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-flex-basis属性"><span class="toc-number">2.3.4.</span> <span class="toc-text">3.4 flex-basis属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-flex属性"><span class="toc-number">2.3.5.</span> <span class="toc-text">3.5 flex属性</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
-<!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
-
   
-    <article id="post-second-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/18/second-blog/">github常见操作和常见错误！</a>
-    </h1>
   
 
-        
-        <a href="/2017/02/18/second-blog/" class="archive-article-date">
-  	<time datetime="2017-02-18T07:37:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-18</time>
-</a>
-        
-        <!-- <p id="busuanzi_container_page_pv">
-          本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-        </p> -->
-      </header>
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-        
-          <h2 id="错误提示：fatal-remote-origin-already-exists"><a href="#错误提示：fatal-remote-origin-already-exists" class="headerlink" title="错误提示：fatal: remote origin already exists."></a>错误提示：fatal: remote origin already exists.</h2><p>如果输入<code>$ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git</code><br>提示出错信息：fatal: remote origin already exists.<br>解决办法如下：</p>
-          
-        
-      
+  
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">常见错误</a>
-        		</li>
-      		
-		</ul>
-	</div>
+  
 
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/18/second-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
+  
 
 
 <!-- 来必力City版安装代码 -->
 
-<!-- City版安装代码已完成 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNjM3Ni8xMjkxMQ==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-  
-    <article id="post-firstBlog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/26/firstBlog/">使用hexo+github搭建博客</a>
-    </h1>
-  
+       if (typeof LivereTower === 'function') { return; }
 
-        
-        <a href="/2016/04/26/firstBlog/" class="archive-article-date">
-  	<time datetime="2016-04-26T06:34:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-04-26</time>
-</a>
-        
-        <!-- <p id="busuanzi_container_page_pv">
-          本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-        </p> -->
-      </header>
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-        
-          <h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h2><p>1&gt;必须有一个github账号，没有的话需要注册一个；<br>2&gt;安装了node.js、npm，并且了解相关的基础知识；<br>3&gt;安装git(或者其它git客户端)</p>
-          
-        
-      
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">博客搭建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客//" class="article-tag-list-link color3">博客</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/04/26/firstBlog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-<!-- 来必力City版安装代码 -->
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
 
 <!-- City版安装代码已完成 -->
-
-  
-  
-
 
           </div>
         </div>
@@ -552,8 +422,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
