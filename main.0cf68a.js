@@ -15,8 +15,3 @@ var o=function(e){if(e.BJ_REPORT)return e.BJ_REPORT;var t=[],n={},o={id:0,uin:0,
 
 
 var Instagram = document.getElementsByClassName('instagram')
-if(Instagram.length) {
-   require(['/js/photo.js', '/fancybox/jquery.fancybox.js', '/js/jquery.lazyload.js'], function(obj) {
-        obj.init();
-   });
-}
