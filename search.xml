@@ -3,7 +3,12 @@
   <entry>
     <title><![CDATA[vue组件之间的通信]]></title>
     <url>%2F2018%2F06%2F05%2Fvue-communication%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[前言组件关键主要有三种：父–&gt;子、子–&gt;父、非父子 父–&gt;子父向子传递数据通过props 子–&gt;父子组件向父组件传递分为两种类型。1、子组件改变父组件传递的props(你会发现通过props中的Object类型参数传输数据，可以通过子组件改变数据内容。这种方式是可行的，但是不推荐使用，因为官方定义prop是单向绑定)2、通过$on和$emit]]></content>
+      <tags>
+        <tag>vue</tag>
+        <tag>组件</tag>
+        <tag>组件通信</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[前端页面布局的几种方法]]></title>
