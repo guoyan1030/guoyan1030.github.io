@@ -5,7 +5,7 @@
     <url>%2F2018%2F09%2F26%2Fcss%2F</url>
     <content type="text"><![CDATA[1.letter-spacing: value;——设置字符间距，可以设置字母与字母之间的间距2.box-sizing: 以特定的方式定义匹配某个区域的特定元素3.text-overflow: 规定当文本溢出包含元素时发生的事情。 clip:修建文本（默认）。 ellipsis:显示省略符号来代表被修剪的文本。 string:使用给定的字符串来代表被修剪的文本。4.white-space: 设置如何处理元素内的空白 normal:默认。空白会被浏览器忽略。 pre:空白会被浏览器保留。其行为方式类似HTML中的&lt;pre&gt; 标签。 nowrap:文本不会换行，文本会在同一行上继续，直到遇到&lt;br&gt;标签为止。 pre-wrap:保留空白符序列，但是正常地进行换行。 pre-line:合并空白符序列，但是保留换行符。 inherit:规定应该从父元素继承white-space属性的值。5.box-flex: value;——规定框的子元素是否可伸缩其尺寸 浏览器支持: 目前没有浏览器支持box-flex属性。 Firefox 支持替代的 -moz-box-flex 属性。Safari、Opera 以及 Chrome 支持替代的 -webkit-box-flex 属性。6.word-break——规定自动换行的方法 normal:使用浏览器默认换行的规则。 break-all:允许在单词内换行。 keep-all:只能在半角空格或字符处换行。7.-webkit-box-orient——规定框的子元素应该被水平或垂直排列。 浏览器支持 目前没有浏览器支持box-orient属性。 Firefox支持代替的-moz-box-orient属性。 Safari、Opera以及Chrome支持替代的-webkit-box-orient属性。 horizontal:在水平行中从左向右排列子元素。 vertical:从上向下垂直排列子元素。 inline-axis:沿着行内轴来排列子元素（映射为horizontal）。 block-axis:沿着块轴来排列子元素（映射为vertical)。 inherit:应该从父元素继承box-orient属性的值。8.-webkit-line-clamp——限制一个块元素显示的文本的行数。 display:-webkit-box; -webkit-line-clam:2; text-overflow:ellipsis; -webkit-box-orient:vertical;9.text-indent——规定文本块中首行文本的缩进。10.transform11.transition-duration12.resize——规定一个元素是否是由用户调整大小的。 none:用户无法调整元素的尺寸。 both:用户可调整元素的高度和宽度。 horizontal:用户可调整元素的宽度。 vertical:用户可调整元素的高度。13.border-spacing——设置相邻单元格的边框间的距离（仅用于“边框分离”模式）。14.border-collapse——设置表格的边框是否被合并为一个单一的边框，还是像在标准的HTML中那样分开显示。 separate:默认值。边框会被区分开。不会忽略border-spacing和empty-cells属性。 collapese:如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。 inherit:规定应该从父元素继承 border-collapse 属性的值。]]></content>
       <tags>
-        <tag>CSS</tag>
+        <tag>前端，CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -51,8 +51,8 @@
         <category>博客</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Github</tag>
+        <tag>Hexo</tag>
         <tag>博客搭建</tag>
       </tags>
   </entry>
